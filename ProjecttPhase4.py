@@ -170,7 +170,7 @@ if __name__ == "__main__":
     print()
     print("##### Date Entry #####")
     ########## Write the line of code to assign UserRole and UserName to the function Login
-    Login(UserRole, UserName)
+    Login=(UserRole, UserName)
     DetailsPrinted = False  ###
     EmpTotals = {} ###
     ########### Write the if statement that will check to see if UserRole is equal to NONE (NOTE: code will show red error lines until this line is written)
@@ -179,8 +179,7 @@ if __name__ == "__main__":
     else:
     # only admin users can enter data
         ##### Write the if statement that will check to see if the UserRole if equal to ADMIN (NOTE: code will show red error lines until this line is written)
-
-
+        UserRole == "Admin"
             EmpFile = open("Employees.txt", "a+")
             while True:
                 empname = GetEmpName()
