@@ -1,0 +1,2 @@
+02/01/1998|03/14/1998|Gregg|<function GetHoursWorked at 0x00000213802D0A60>|<function GetHourlyRate at 0x00000213802D0AF0>|<function GetTaxRate at 0x00000213802D0B80>
+11/16/2009|03/14/2010|Kathy|<function GetHoursWorked at 0x00000213802D0A60>|<function GetHourlyRate at 0x00000213802D0AF0>|<function GetTaxRate at 0x00000213802D0B80>

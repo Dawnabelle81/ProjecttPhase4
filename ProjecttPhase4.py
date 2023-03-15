@@ -41,7 +41,7 @@ def GetUserRole():
     userrole = input("Enter role (Admin or User): ")
     while True:
         ###### Write the if statement that validates that Admin or User has been entered. If true, return userrole. If false, re-input userrole.
-        if userrole.upper() == "Admin" or userrole.upper() == "User":
+        if userrole.upper() == "ADMIN" or userrole.upper() == "USER":
             return userrole
         else:
             print("Invalid input. Please enter either Admin or User.")
@@ -179,7 +179,7 @@ if __name__ == "__main__":
     else:
     # only admin users can enter data
         ##### Write the if statement that will check to see if the UserRole if equal to ADMIN (NOTE: code will show red error lines until this line is written)
-        if UserRole.upper() == "Admin":
+        if UserRole.upper() == "ADMIN":
             EmpFile = open("Employees.txt", "a")
             while True:
                 empname = GetEmpName()
