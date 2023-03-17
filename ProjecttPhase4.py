@@ -84,19 +84,24 @@ def Login():
 def GetEmpName():
     empname = input("Enter employee name: ")
     return empname
+
 def GetDatesWorked():
     fromdate = input("Enter Start Date (mm/dd/yyyy): ")
     todate = input("Enter End Date (mm/dd/yyyy): ")
     return fromdate, todate
+
 def GetHoursWorked():
     hours = float(input('Enter amount of hours worked: '))
     return hours
+
 def GetHourlyRate():
     hourlyrate = float(input('Enter hourly rate: '))
     return hourlyrate
+
 def GetTaxRate():
     taxrate = float(input('Enter tax rate: '))
     return taxrate
+
 def CalcTaxAndNetPay(hours, hourlyrate, taxrate):
     grosspay = hours * hourlyrate
     incometax = grosspay * taxrate
@@ -154,6 +159,7 @@ def printinfo(DetailsPrinted):
         PrintTotals(EmpTotals)
     else:
         print("No detail information to print")
+
 def PrintTotals(EmpTotals):
     print()
     print(f'Total Number Of Employees: {EmpTotals["TotEmp"]}')
@@ -186,9 +192,9 @@ if __name__ == "__main__":
                 if (empname.upper() == "END"):
                     break
                 fromdate, todate = GetDatesWorked()
-                hours = GetHoursWorked
-                hourlyrate = GetHourlyRate
-                taxrate = GetTaxRate
+                hours = GetHoursWorked()
+                hourlyrate = GetHourlyRate()
+                taxrate = GetTaxRate()
                 EmpDetail = fromdate + "|" + todate + "|" + empname + "|" + str(hours) + "|" + str(hourlyrate) + "|" + str(taxrate) + "\n"
                 EmpFile.write(EmpDetail)
         # close file to save data
